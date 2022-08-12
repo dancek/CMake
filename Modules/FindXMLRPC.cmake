@@ -20,10 +20,15 @@ Modules may be listed by running "xmlrpc-c-config".  Modules include:
 
 ::
 
-  c++            C++ wrapper code
-  libwww-client  libwww-based client
-  cgi-server     CGI-based server
-  abyss-server   ABYSS-based server
+  c++            legacy C++ wrapper API
+  c++2           modern C++ API
+  client         client functions
+  cgi-server     CGI-based server functions
+  abyss-server   ABYSS-based server functions
+  pstream-server pstream-based server functions
+  server-util    basic server functions (implied by *-server)
+  abyss          Abyss HTTP server (not necessary with abyss-server)
+  openssl        Openssl convenience functions
 
 Typical usage:
 
